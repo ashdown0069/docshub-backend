@@ -1,0 +1,50 @@
+### signIn req
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "12345"
+}
+
+### open folder
+GET http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder
+
+
+### create folder
+POST http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder
+Content-Type: application/json
+
+{
+  "folderName": "test folder2",
+  "parentId": null
+}
+
+### find folder
+POST http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder
+Content-Type: application/json
+
+{
+    "folderId" : null
+}
+
+### move folder
+PATCH  http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder
+Content-Type: application/json
+
+{
+  "sourceIds": ["6790b201bfb8a6be81ed2626"],
+  "targetId" : "6790b1eebfb8a6be81ed2622"
+}
+
+### delete folder
+DELETE  http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder/6790b201bfb8a6be81ed2626
+Content-Type: application/json
+
+### rename folder
+PATCH  http://localhost:3001/6786635ab0fd472715f94279/filebrowser/folder/6790b1eebfb8a6be81ed2622
+Content-Type: application/json
+
+{
+  "newName": "change folder name"
+}

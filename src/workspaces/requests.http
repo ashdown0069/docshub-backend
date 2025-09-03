@@ -1,0 +1,54 @@
+### signIn req
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "12345"
+}
+
+
+### create workspace
+POST http://localhost:3001/workspace
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2syIiwic3ViIjoiNjdiNmVjYWU5MDllYzBjYzQ4MmFlN2YxIiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3NDA2NjY0ODYsImV4cCI6MTc0MDc1Mjg4Nn0.JDZYMXudmZeVoXtvZeaMv33ytBmVLBGpdKaIYOPrF_E
+
+{
+  "name": "create-test-workspace3",
+  "description": "this is for test3"
+}
+
+### join workspace
+POST http://localhost:3001/workspace/join
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc3ZjdjZGE5NGY0ZDA3MDI4OTMzMmQ5IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzY0MDgyOTYsImV4cCI6MTczNjQ5NDY5Nn0.ZhN5jFwRPeRKBAT3JoGCx59t9c8mbac_G2aw4C1vIeQ
+
+{
+ "name": "create-test-workspace1",
+ "password" :"1234"
+}
+
+
+### delete workspace
+DELETE http://localhost:3001/workspace
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2szIiwic3ViIjoiNjc3MDFmYzc3YmE4ODM0NThlMDY5MmU2IiwicGxhbiI6ImVudGVycHJpc2UiLCJpYXQiOjE3MzYwODAyMDEsImV4cCI6MTczNjE2NjYwMX0.jqU_nvYUrCthOl-ijQslR02ELqVSq2j5zmQlTQOT7Cs
+
+{
+ "workspaceId": "6778033497d7b552de14f3dc",
+ "password" : "1234"
+}
+
+### delete workspace member
+DELETE http://localhost:3001/workspace/deletemember
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2szIiwic3ViIjoiNjc3MDFmYzc3YmE4ODM0NThlMDY5MmU2IiwicGxhbiI6ImVudGVycHJpc2UiLCJpYXQiOjE3MzYwODAyMDEsImV4cCI6MTczNjE2NjYwMX0.jqU_nvYUrCthOl-ijQslR02ELqVSq2j5zmQlTQOT7Cs
+
+{
+ "workspaceId": "677803bfc6838bad00a9b25a",
+ "targetUserEmail" : "test2@test.com"
+}
+
+###get all workspaces
+GET http://localhost:3001/workspace
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc4MjBkNWZkOGRjNWYwYTJmOTc1NmQ3IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzcwMTc3NTEsImV4cCI6MTczNzEwNDE1MX0.RuZMBjnxXv1E6oC4XvPUh9sTuu6KiVywwt_JsqugNXM

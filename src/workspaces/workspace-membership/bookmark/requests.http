@@ -1,0 +1,25 @@
+### signIn req
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "12345"
+}
+
+### test
+GET http://localhost:3001/bookmark
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc4MjBkNWZkOGRjNWYwYTJmOTc1NmQ3IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzY3ODA1NTAsImV4cCI6MTczNjg2Njk1MH0.0co_Byl1G1mSTR8pfztIsRdzKmYIP-Oeuu9VixAT7rc
+
+
+### 북마크 추가
+POST  http://localhost:3001/workspace-membership/bookmark
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc4MjBkNWZkOGRjNWYwYTJmOTc1NmQ3IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzY4MzM4MjYsImV4cCI6MTczNjkyMDIyNn0.WLxASyVeLbT9x6xf_noKw243d0WYGRDuArdrEFZlSfM
+Content-Type: application/json
+
+{
+ "workspaceId": "6785328bdf205e29bd1d5dab"
+}
+###
+DELETE   http://localhost:3001/user/bookmark/677f7cf994f4d070289332e0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc3ZjdjZGE5NGY0ZDA3MDI4OTMzMmQ5IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzY0MTU4NzEsImV4cCI6MTczNjUwMjI3MX0.tkhQq3sBTHxHW59xwm9Bmxayd6b7-iXIa6EvHXVf14o

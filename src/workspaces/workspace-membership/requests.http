@@ -1,0 +1,13 @@
+### signIn req
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "12345"
+}
+
+
+###
+GET http://localhost:3001/workspace-membership
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwibmlja25hbWUiOiJ0ZXN0LW5pY2sxIiwic3ViIjoiNjc4MjBkNWZkOGRjNWYwYTJmOTc1NmQ3IiwicGxhbiI6ImZyZWUiLCJpYXQiOjE3MzY3NzQ0MTMsImV4cCI6MTczNjg2MDgxM30.p4dCWtS36_AQY4duCPjEBRUMCZrTKWhjA4wuxH2Q1Xk

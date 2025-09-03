@@ -1,0 +1,22 @@
+
+### signUp req
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "12345",
+  "nickname": "test-nick2"
+}
+
+
+### signIn req
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "12345"
+}
+
+###

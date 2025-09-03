@@ -1,0 +1,11 @@
+### 파일 업로드
+POST http://localhost:3001/6786635ab0fd472715f94279/browser/file
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test2.txt"
+Content-Type: text/plain
+
+
+< ./test2.txt
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
