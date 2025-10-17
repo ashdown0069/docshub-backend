@@ -43,6 +43,9 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# pm2 start
+$ pm2 start ecosystem.config.js --env production
 ```
 
 ### **프레임워크 & 핵심 라이브러리**
